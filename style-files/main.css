@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--white);
+}
+
+:root {
+    --white: #FFFFFFff;
+    --antiflash-white: #EEEEEEff;
+    --verdigris: #07ACB5ff;
+    --onyx: #393D46ff;
+    --gunmetal: #222933ff;
+}
+
+body {
+    background: var(--gunmetal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*
+Header area _________________________________________
+Nav is common identity and nav-(somthing) is id names
+*/
+
+header {
+    height: 70px;
+    width: 100%;
+
+    #head-overlay {
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        height: inherit;
+        width: inherit;
+
+        .nav {
+            border: 1px solid yellow;
+            height: 100%;
+        }
+
+        #nav-logo {
+            width: 200px;
+        }
+        #nav-text {
+            width: 700px;
+            margin-left: 20%;
+        }
+        #nav-unknown {
+            width: 70px;
+        }
+    }
+}
+
+
+/* INFORMATION TEXT AREA ACCORDING TO THE LAYOUT */
+
+#info-text {
+    border: 1px solid yellow;
+    height: 40px;
+    width: 100%;
+    margin-top: 2.5rem;
+    text-align: center;
+    align-content: center;
+    letter-spacing: .5rem;
+}
+
+/* Input area */
+
+#input-area {
+    height: 40px;
+    width: 100%;
+    border: 1px solid yellow;
+    margin-top: 1.8rem;
+    padding-inline: 30%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .input {
+        height: 30px;
+        border: 1px solid yellow
+    }
+
+    #paste-text {
+        align-content: center;
+        text-align: center;
+        width: 30%;
+    }
+
+    #input-file-text {
+        width: 70%;
+    }
+
+    #button {
+        width: 85px;
+        color: black;
+    }
+
+}
+
+
+/* GRID AREA AS IN THE DESIGN */
+
+#grid {
+    border: 1px solid yellow;
+    height: fit-content;
+    width: 50%;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+    .inner-grid-box {
+        height: 50px;
+        width: 200px;
+        border: 1px solid yellow;
+    }
+}
+
+
+/* footer area */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    padding: 2rem;
+    border: 1px solid yellow;
+}
