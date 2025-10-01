@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/structure.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/mainAfterClick.css">
     <link rel="stylesheet" href="temp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <title>Scan Sheild : Your destination for protacting yourself</title>
 </head>
+
 <body>
     <div class="background"></div>
+    <div class="menu-area position-menu"></div>
+    <div class="menu-disable-area disable-area-display"></div>
+    <!-- <div class="menu-area position-menu-area-true"></div>
+    <div class="menu-area-disable menu-area-disable-true"></div> -->
 
     <header>
-        <div class="header-menu-btn"><i class="fa-solid fa-lines-leaning"></i></div>
+        <button id="header-menu-btn"><i class="fa-solid fa-lines-leaning"></i></button>
         <div class="header-scan-sheild">SCAN SHEILD</div>
     </header>
-    <main>
-        <div class="front-text-area">SCAN & STAY AWARE<div><div class="front-info-text-area">upload files or past links here<div></div></div>
-        <div class="front-input-area"><div class="input"><input id="text-input" type="text" placeholder="Upload Files, URL's, etc...."><div class="upload"><i class="fa-solid fa-arrow-up-from-bracket fa-2xs"></i></div></div><button>SCAN</button></div>
-        <div class="front-down-text-area">Free & OpenSource <span class="span1">Upload files, URL's or paths. Instantly verify files & links. </sapn></div>
-        <div class="front-image-area"></div>
+    <main class="main">
+        <div class="front-text-area">SCAN & STAY AWARE
+            <div>
+                <div class="front-info-text-area">upload files or past links here
+                    <div></div>
+                </div>
+                <div class="front-input-area">
+                    <div class="input"><input id="text-input" type="text" placeholder="Upload Files, URL's, etc....">
+                        <div class="upload"><i class="fa-solid fa-arrow-up-from-bracket fa-2xs"></i></div><input type="file" id="hiddenFileInput" style="display: none;">
+                    </div><button class="btn">SCAN</button>
+                </div>
+                <div class="front-down-text-area">Free & OpenSource <span class="span1">Upload files, URL's or paths.
+                        Instantly verify files & links. </sapn>
+                </div>
+                <div class="front-image-area"><img src="style/img-sheild.jpg" alt="none"></div>
     </main>
     <footer>2025 All rights reserved by Scan Sheild Team.</footer>
+
+    <script src="src/index.js"></script>
 </body>
+
 </html>

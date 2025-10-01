@@ -1,0 +1,30 @@
+.menu-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 4px solid var(--verdigris);
+    height: 100%;
+    min-width: 200px;
+    width: 400px;
+    z-index: 1000;
+    background-color: var(--gunmetal);
+    transition: all .5s ease-in;
+}
+
+.position-menu {
+    left: -400px;
+}
+
+.menu-disable-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 900;
+    background-color: transparent;
+}
+
+.disable-area-display {
+    display: none;
+}
